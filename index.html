@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+<script src="script.js"></script>
 <body>
 
 <div class="container">
@@ -35,23 +36,25 @@
         <section class="cards">
             <div class="card balance">
                 <h3>Total Balance</h3>
-                <p>₹ 24,500</p>
+                <p id="balance">₹ 24500</p>
             </div>
 
             <div class="card income">
                 <h3>Income</h3>
-                <p>₹ 40,000</p>
+                <p id="income">₹ 40000</p>
             </div>
 
             <div class="card expense">
                 <h3>Expenses</h3>
-                <p>₹ 15,500</p>
+                <p id="expense">₹ 15500</p>
             </div>
         </section>
+
 
         <!-- TRANSACTIONS -->
         <section class="transactions">
             <h2>Recent Transactions</h2>
+            <div id="transaction-list"></div>
 
             <div class="transaction income">
                 <span>Salary</span>
